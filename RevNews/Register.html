@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RevNews</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form id="registrationForm">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" id="firstName" placeholder="Enter your First name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" id="lastName" placeholder="Enter your Last name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phoneNumber" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="news-details">
+          <span class="news-title">Select your preferred news categories:</span>
+          <div class="category">
+            <label>
+              <input type="checkbox" name="categories" value="World"> World
+            </label>
+            <label>
+              <input type="checkbox" name="categories" value="Business"> Business
+            </label>
+            <label>
+              <input type="checkbox" name="categories" value="Sports"> Sports
+            </label>
+            <label>
+              <input type="checkbox" name="categories" value="Entertainment"> Entertainment
+            </label>
+            <label>
+              <input type="checkbox" name="categories" value="Science"> Science
+            </label>
+            <label>
+              <input type="checkbox" name="categories" value="Health"> Health
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var phoneNumber = document.getElementById("phoneNumber").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password !== confirmPassword) {
+        alert("Password and Confirm Password do not match.");
+        return;
+      }
+
+      var categories = [];
+      var checkboxes = document.getElementsByName("categories");
+      checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+          categories.push(checkbox.value);
+        }
+      });
+
+      var userData = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phoneNumber: phoneNumber,
+        password: password,
+        categories: categories
+      };
+
+      localStorage.setItem("userData", JSON.stringify(userData));
+
+      alert("Registration successful. Redirecting to login page...");
+      setTimeout(function() {
+        window.location.href = "login.html";
+      }, 2000);
+    });
+  </script>
+</body>
+
+</html>

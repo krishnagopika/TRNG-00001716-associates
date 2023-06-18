@@ -1,0 +1,232 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 10px;
+}
+
+#categoryDropdown {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.move-left {
+  margin-left: 30px;
+}
+
+/* Styling for the dropdown list */
+.dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown li {
+  padding: 8px;
+}
+
+.dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.container mt-4 {
+  margin-top: 50px;
+}
+
+#newsList {
+  margin-top: 20px;
+  width:100%
+}
+
+#newsList .card {
+  margin-bottom: 10px;
+}
+
+/* Common Styles */
+.container { 
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 7%;
+  }
+  
+  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Login Styles */
+  .login-container {
+    margin-top: 100px;
+   
+  }
+  
+  /* Registration Styles */
+  .registration-container {
+    margin-top: 50px;
+    
+  }
+  
+  #loginForm {
+    max-width: 400px;
+    margin-top: 11%;
+  }
+
+  #registrationForm {
+    max-width: 400px;
+    margin-top: 3%;
+  }
+
+  .row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    flex-shrink: 0;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.read-more-btn {
+    margin-top: auto;
+    flex: 1;
+    width: 60%;
+    margin-right:10% ;
+}
+.save-btn{
+  margin-top: auto;
+    flex: 1;
+    width: 20%;
+    margin-left:10% ;
+}
+
+.profile-icon-btn {
+  width: auto;
+  height:auto;
+  margin-left:20px;
+}
+
+.profile-icon-btn i{
+  height:auto;
+  width:auto;
+}
+
+#profileInfo{
+  height:370px;
+  width:300px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top:13%;
+  margin-left: 38%;
+}
+#profileInfo button{
+  margin-bottom: 3%;
+  width:fit-content
+}
+
+
+
+  

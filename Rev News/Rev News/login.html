@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div id="header" style="display: none;">
+    <header class="header d-flex align-items-center fixed-top hide">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+          <a href="login.html" class="logo d-flex align-items-center">
+            <h1>Rev News</h1>
+          </a>
+          <nav id="navbar" class="navbar">
+                <div class="dropdown">
+                    <select id="categoryDropdown">
+                      <option value="">Select a category</option>
+                      <option value="business">Business</option>
+                      <option value="nation">Nation</option>
+                      <option value="sports">Sports</option>
+                      <option value="health">Health</option>
+                      <option value="science">Science</option>
+                      <option value="entertainment">Entertainment</option>
+                      <option value="technology">Technology</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-center h-100">
+                    <div class="search">
+                        <input type="text" class="search-input" placeholder="search..." name="searchInput" id="searchInput">
+                        <a href="#" class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </a></div>
+                    </div>
+                    <button class="profile-icon-btn" onclick="toggleProfile()">
+                        <i class="fas fa-user-alt"></i>
+                    </button>
+            <button class="btn btn-primary mr-2 move-left" onclick="logout()" style="width: 80px;">Logout</button>
+        </nav>
+    </div>
+</header>
+</div>
+
+    <div class="container mt-4">
+        <div id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <div class="form-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" class="form-control" id="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register here</a></p>
+        </div>
+
+        <div id="registrationForm" style="display: none;">
+            <h2>Registration</h2>
+            <form onsubmit="register(event)">
+                <div class="form-group">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" class="form-control" id="regUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password:</label>
+                    <input type="password" class="form-control" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" class="form-control" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhoneNumber">Phone Number:</label>
+                    <input type="text" class="form-control" id="regPhoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select class="form-control" id="regCountry" required>
+                        <option value="in">Choose a Country</option>
+                        <option value="au">Australia</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="cn">China</option>
+                        <option value="eg">Egypt</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                        <option value="gr">Greece</option>
+                        <option value="hk">Hong Kong</option>
+                        <option value="in">India</option>
+                        <option value="ie">Ireland</option>
+                        <option value="il">Israel</option>
+                        <option value="it">Italy</option>
+                        <option value="jp">Japan</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="no">Norway</option>
+                        <option value="pk">Pakistan</option>
+                        <option value="pe">Peru</option>
+                        <option value="ph">Philippines</option>
+                        <option value="pt">Portugal</option>
+                        <option value="ro">Romania</option>
+                        <option value="ru">Russian Federation</option>
+                        <option value="sg">Singapore</option>
+                        <option value="es">Spain</option>
+                        <option value="se">Sweden</option>
+                        <option value="ch">Switzerland</option>
+                        <option value="tw">Taiwan</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="gb">United Kingdom</option>
+                        <option value="us">United States</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Confirm Password:</label>
+                    <input type="password" class="form-control" id="regConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
+        </div>
+        <div id="newsContainer" style="display: none;">
+            <h2>Latest News</h2>
+            <div id="newsList"></div>
+        </div>
+
+        <div id="profileInfo" style="display: none;">
+            <h2>Profile Information</h2>
+            <p>Username: <span id="username"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone Number: <span id="phoneNumber"></span></p>
+            <p>Country: <span id="country"></span></p>
+            <button id="cancelButton" class="btn btn-secondary">Cancel</button>
+
+            <!-- <button onclick="togglePhoneNumber()">Change Password</button>
+            <div id="phoneNumberContainer" style="display: none;">
+                <div class="form-group">
+                    <label for="newPhoneNumber">New Phone Number:</label>
+                    <input type="text" class="form-control" id="newPhoneNumber" required>
+                </div>
+                <button onclick="updatePhoneNumber()">Save</button>
+            </div>
+            <button onclick="updatePhoneNumber()">Change Phone Number</button> -->
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

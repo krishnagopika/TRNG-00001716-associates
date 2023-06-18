@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "username": "swapna",
+      "email": "swapna@gmail.com",
+      "phone_number": "6304658521",
+      "country": "in",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "swapna",
+      "email": "swapna@gmail.com",
+      "phone_number": "6304658521",
+      "country": "in",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "vyshnavi",
+      "email": "vyshu@gmail.com",
+      "phone_number": "646498794",
+      "country": "in",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "meghana",
+      "email": "meghana@gmail.com",
+      "phone_number": "6304658521",
+      "country": "in",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "john",
+      "email": "john@gmail.com",
+      "phone_number": "123456789",
+      "country": "us",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "username": "siva",
+      "email": "siva@gmail.com",
+      "phone_number": "6304658521",
+      "country": "jp",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "nasreen",
+      "email": "nasreen@gmail.com",
+      "phone_number": "6304658521",
+      "country": "au",
+      "password": "123",
+      "id": 7
+    }
+  ],
+  "savedArticles": [
+    {
+      "title": "Ukraine’s counteroffensive so far: steady gains, heavy losses",
+      "description": "Ukraine is making steady progress in the counteroffensive it launched this month and has reclaimed several towns in the southeast, but its troops are taking heavy losses as they try to plow through entrenched Russian lines. Even with the losses, the incremental progress is defying expectations, given that Russia has had months to fortify its…",
+      "content": "Ukraine is making steady progress in the counteroffensive it launched this month and has reclaimed several towns in the southeast, but its troops are taking heavy losses as they try to plow through entrenched Russian lines.\nEven with the losses, the ... [8079 chars]",
+      "url": "https://thehill.com/policy/defense/4052608-how-ukraines-counteroffensive-is-going-so-far/",
+      "image": "https://thehill.com/wp-content/uploads/sites/2/2023/06/AP23165270010883-e1686870949967.jpg?w=1280",
+      "publishedAt": "2023-06-15T23:17:00Z",
+      "source": {
+        "name": "The Hill",
+        "url": "https://thehill.com"
+      },
+      "id": 1
+    },
+    {
+      "title": "US government hit in global cyberattack",
+      "description": "Several US federal government agencies have been hit in a global cyberattack by Russian cybercriminals that exploits a vulnerability in widely used software, according to a top US cybersecurity agency.",
+      "content": "CNN —\nSeveral US federal government agencies have been hit in a global cyberattack by Russian cybercriminals that exploits a vulnerability in widely used software, according to a top US cybersecurity agency.\nThe US Cybersecurity and Infrastructure Se... [5112 chars]",
+      "url": "https://www.cnn.com/2023/06/15/politics/us-government-hit-cybeattack/index.html",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/220228105352-hackers.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-06-16T02:03:00Z",
+      "source": {
+        "name": "CNN",
+        "url": "https://www.cnn.com"
+      },
+      "id": 2
+    }
+  ]
+}

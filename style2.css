@@ -1,0 +1,49 @@
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase-image{
+    margin-left: 15rem;
+}
+
+
+
+.showcase-text h4 {
+    font-size: 2.1rem;
+    font-weight: 100;
+    color: #444;
+    margin-bottom: 4rem;
+    line-height: 2px;
+}
+
+.showcase-text p{
+    font-size: 1.2rem;
+    line-height: 125%;
+    margin-bottom: 4.5rem;
+    color: #777;
+}
+
+.showcase-text .btn {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 3.8rem;
+    display: inline-block;
+    border-radius: 50px;
+    initial-letter: 2px;
+    transition: background 0.2s;
+}
+
+.showcase-text .btn{
+    
+    background-size: 30%;
+    border-bottom: 20%;
+}
+body{
+    background: url(./luca-micheli-ruWkmt3nU58-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* backdrop-filter: blur(5px);  */
+}

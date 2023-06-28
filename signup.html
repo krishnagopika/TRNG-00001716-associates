@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body >
+    <div class="container-fluid m-0 p-0">
+
+        <div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-primary" href="#">Welcome for Any News</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- <button class="btn btn-outline-warning">Back</button> -->
+              </nav>
+    <center>
+    <div class="container">
+        <div class="row jusify-content-center align-items-center" style="height: 100vh;" >
+            <div class="col-md-6 offset-md-3">
+                <div class="card bg-transparent text-black">
+                    <div class="card-body">
+                        <h5 class="card-title">Hi New User  ,  Register Here </h5>
+                        <br>
+    <form action="" id="registrationForm">
+        <div class="mb-3">
+
+        <label for="rname" class="text-dark">Name</label>
+        <br>
+        <input type="text" id="rname">
+    </div>
+    <div class="mb-3">
+        <label for="remail">Email</label>
+        <br>
+        <input type="email" id="remail" required>
+    </div>
+    <div class="mb-3">
+        <label for="rpassword">Password</label>
+        <br>
+        <input type="password" id="rpassword" required>
+    </div>
+    <div class="mb-3">
+        <label for="rpassword">Confirm Password</label>
+        <br>
+        <input type="password" id="rpassword" required>
+    </div>
+    <div class="mb-3">
+        <label for="rAge">Age</label>
+        <br>
+        <input type="text" id="rAge">
+    </div>
+    <div class="mb-3">
+        <label for="rInterested">Interested news</label>
+        <br>
+        <input type="text" id="rInterested">
+    </div>
+    <div class="mb-3">
+        <label for="rAddress">Address</label>
+        <br>
+        <input type="text" id="rAddress">
+    </div>
+    <br>
+        <button type="submit" class="btn btn-dark" onclick="signup()">Submit</button>
+
+    </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="signup.js"></script>
+    </center>
+    
+</body>
+</html>

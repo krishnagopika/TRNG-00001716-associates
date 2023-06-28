@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "name": "Billudu Siva Ankamma Rao",
+      "email": "siva.billudu5@gmail.com",
+      "password": "Siv@1221",
+      "age": "22",
+      "interestednews": [
+        "sports",
+        "business"
+      ],
+      "address": "Boddurai bazar/8-330, Makkenavaripalem, santhamaguluru mandal",
+      "id": 5
+    },
+    {
+      "name": "raghav",
+      "email": "raghav@gmail.com",
+      "password": "Raghav@123",
+      "age": "19",
+      "interestednews": "sports,business,technology",
+      "address": "Ong,Ap",
+      "id": 8
+    },
+    {
+      "name": "raghav",
+      "email": "raghav@gmail.com",
+      "password": "raghav@1234",
+      "age": "19",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "Ong,Ap",
+      "id": 9
+    },
+    {
+      "name": "raghav",
+      "email": "raghav@gmail.com",
+      "password": "raghav@1234",
+      "age": "19",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "Ong,Ap",
+      "id": 10
+    },
+    {
+      "name": "sid",
+      "email": "sid@gmail.com",
+      "password": "Sid@123",
+      "age": "65",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "Kuchipudi,Ap",
+      "id": 11
+    },
+    {
+      "name": "sid",
+      "email": "sid@gmail.com",
+      "password": "Sid@123",
+      "age": "22",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "Kuchipudi,Ap",
+      "id": 12
+    },
+    {
+      "userId": "user1",
+      "currentPassword": "Raghav@123",
+      "newPassword": "Raghv@123",
+      "id": 13
+    },
+    {
+      "userId": "user1",
+      "currentPassword": "Raghav@123",
+      "newPassword": "Rad@1234",
+      "id": 14
+    },
+    {
+      "name": "sai",
+      "email": "sai@gmail.com",
+      "password": "Sai@123",
+      "age": "25",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "palasa,Ap",
+      "id": 15
+    },
+    {
+      "name": "Ramya",
+      "email": "ram@gmail.com",
+      "password": "Ramya@123",
+      "age": "22",
+      "interestednews": [
+        "sports",
+        "business",
+        "technology"
+      ],
+      "address": "Rjm,Ap",
+      "id": 16
+    },
+    {
+      "name": "Tej",
+      "email": "tej@gmail.com",
+      "password": "Tej@123",
+      "age": "29",
+      "interestednews": "sports,business",
+      "address": "ong,APP",
+      "id": 17
+    },
+    {
+      "userId": "user1",
+      "currentPassword": "Tej@123",
+      "newPassword": "Tej@1234",
+      "id": 18
+    }
+  ]
+}
